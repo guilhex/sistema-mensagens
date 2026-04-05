@@ -20,15 +20,15 @@ Este repositório contém a implementação de uma aplicação distribuída em Q
 
 ### Tabela de Testes
 
-| Endpoint | Método | Descrição | Evidência (Postman)                    |
-| :--- | :--- | :--- |:---------------------------------------|
+| Endpoint | Método | Descrição | Evidência (Postman) |
+| :--- | :--- | :--- | :--- |
 | `/mensagens` | **POST** | Criação de uma nova mensagem | ![POST Criar](prints/post-criacao.png) |
-| `/mensagens` | **GET** | Listagem de todas as mensagens cadastradas | ![GET Lista](prints/get-lista.png)     |
-| `/mensagens/{id}` | **GET** | Busca de uma mensagem existente pelo ID | ![GET ID](prints/get-id.png)           |
-| `/mensagens/{id}` | **GET** | Tentativa de busca por um ID inexistente | ![GET 404](prints/get-erro.png)        |
-| `/mensagens/{id}` | **DELETE** | Exclusão de uma mensagem existente | ![DELETE](prints/delete.png)           |
-
+| `/mensagens` | **GET** | Listagem de todas as mensagens cadastradas | ![GET Lista](prints/get-lista.PNG) |
+| `/mensagens/{id}` | **GET** | Busca de uma mensagem existente pelo ID | ![GET ID](prints/get-id.PNG) |
+| `/mensagens/{id}` | **GET** | Tentativa de busca por um ID inexistente | ![GET 404](prints/get-erro.PNG) |
+| `/mensagens/{id}` | **DELETE** | Exclusão de uma mensagem existente | ![DELETE](prints/delete.PNG) |
 ### Justificativa dos Status Codes Utilizados
+
 
 * **200 OK:** Retornado nas requisições **GET** e **DELETE**. Indica que a requisição foi recebida e processada com sucesso pelo servidor e que encontrou a lista/mensagem ou conseguiu deletar.
 * **201 Created:** Retornado exclusivamente na requisição **POST**. Indica de forma específica que a comunicação foi um sucesso e resultou na criação de um novo recurso na memória.
